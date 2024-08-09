@@ -57,6 +57,9 @@ Aşağıdakileri yap:
    İPUCU: Number metoduna bakabilirsin
 */
 
+let deger = "1999";
+console.log(Number(deger));
+
 /*
 Görev 1d - Çarpma
  
