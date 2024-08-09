@@ -114,8 +114,17 @@ OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı ye
 */
 
 function oyun(oyuncu, bilgisayar) {
-  /*buraya kodunu yazabilirsin*/
+  if (oyuncu === "Makas" && bilgisayar === "Kağıt" || oyuncu === "Kağıt" && bilgisayar === "Taş" || oyuncu === "Taş" && bilgisayar === "Makas") {
+    console.log("Oyuncu Kazandın!");
+  } else if (oyuncu === "Makas" && bilgisayar === "Makas" || oyuncu === "Kağıt" && bilgisayar === "Kağıt" || oyuncu === "Taş" && bilgisayar === "Taş") {
+    console.log("Beraberlik");
+  } else {
+    console.log("Bilgisayar Kazandın!");
+  }
 }
+
+/* Function çağırma*/
+oyun("Taş", "Makas");
 
 // Şimdi Taş, Kağıt, Makas oyununu bilgisayara karşı oynayalım!
 /*
