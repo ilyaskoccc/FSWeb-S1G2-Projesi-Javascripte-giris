@@ -119,7 +119,7 @@ function oyun(oyuncu, bilgisayar) {
   } else if (oyuncu === "Makas" && bilgisayar === "Makas" || oyuncu === "Kağıt" && bilgisayar === "Kağıt" || oyuncu === "Taş" && bilgisayar === "Taş") {
     console.log("Beraberlik");
   } else {
-    console.log("Bilgisayar Kazandın!");
+    console.log("Oyuncu Kaybettin!");
   }
 }
 
