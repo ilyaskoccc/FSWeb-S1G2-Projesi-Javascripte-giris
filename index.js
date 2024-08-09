@@ -168,9 +168,12 @@ Aşağdaki milDonusturucu fonksiyonunu aşağıdakileri kullanarak tamamla:
 3. Mil değerini geri dönün
 */
 
-function milDonusturucu(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function milDonusturucu(kilometre) {
+  let mil = (kilometre * 0.621371192);
+  return (kilometre + " km " + mil + " mil eder.");
 }
+
+console.log(milDonusturucu(1));
 
 //Görev 4b - Santimetreden Feet
 /*
