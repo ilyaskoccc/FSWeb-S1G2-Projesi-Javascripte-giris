@@ -39,6 +39,12 @@ Aşağıdakileri yap:
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
 
+let birinciDeger = "koç";
+let ikinciDegeri = "koç";
+if (birinciDeger === ikinciDegeri) {
+  birinciDeger = "ilyas";
+  console.log(birinciDeger);
+}
 
 /*
 Görev 1c - String bir değeri Number'a dönüştürün (puanlamaya dahil değildir)
