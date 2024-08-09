@@ -70,8 +70,11 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamla:
 */
 
 function carpma(sayi1, sayi2) {
-  return sayi1 * sayi2;
+  console.log(sayi1 * sayi2);
 }
+
+/* Function çağırma*/
+carpma(7, 4);
 
 /* Görev 2 : Köpeğin Yaşı */
 
