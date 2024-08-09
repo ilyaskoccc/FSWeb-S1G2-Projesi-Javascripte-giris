@@ -142,6 +142,22 @@ oyun("Taş", "Makas");
 Örn: console.log(oyun("Makas",bilgisayarinSecimi()))
 */
 
+function bilgisayarinSecimi() {
+  let bilgisayarSecim = Math.floor(Math.random() * 3);
+
+  if (bilgisayarSecim === 0) {
+    return "Taş";
+  } else if (bilgisayarSecim === 1) {
+    return "Kağıt";
+  } else {
+    return "Makas";
+  }
+}
+
+/* Function çağırma*/
+oyun("Taş", bilgisayarinSecimi());
+
+
 /* Görev 4 : Metrik Dönüştürücü */
 
 //Görev 4a - Kilometreden Mil
