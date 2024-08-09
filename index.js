@@ -82,9 +82,19 @@ Aşağıdakileri yap:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function kopeginYasi(kopekYas) {
+  if (kopekYas <= 13) {
+    return (kopekYas * 7);
+    // console.log(kopekYas * 7);
+  } else {
+    return "Lütfen 13'e kadar bir rakam giriniz. Araştırmalara göre köpeklerin yaşı ortalama 10 - 13 yıldır.";
+    // console.log("Lütfen 13'e kadar bir rakam giriniz. Araştırmalara göre köpeklerin yaşı ortalama 10 - 13 yıldır.");
+
+  }
 }
+
+/* Function çağırma*/
+kopeginYasi(14);
 
 /* Görev 3 */
 /*
