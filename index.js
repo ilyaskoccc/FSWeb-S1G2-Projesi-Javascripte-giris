@@ -185,9 +185,21 @@ Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yap:
 Google'da arama ipucu: "feet cm dönüştürme"
 */
 
-function feetDonusturucu(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function feetDonusturucu(santiMetre) {
+  // 1 ft = 30.48 cm
+  const feet = Math.floor(santiMetre / 30.48);
+  const kalanCm = santiMetre % 30.48;
+
+  // Geriye kalan santimetreyi inç'e çevir
+  const inc = kalanCm / 2.54; // 1 inç = 2.54 cm
+
+  return `${santiMetre} cm = ${feet} ft ${inc.toFixed(5)} in`;
 }
+
+console.log(feetDonusturucu(30.479));
+console.log(feetDonusturucu(30.48));
+console.log(feetDonusturucu(1));
+console.log(feetDonusturucu(30));
 
 /* Görev 5 : 5 küçük maymun yatakta zıplamış şarkısını çocuklar için hazırladığımı varsayalım. https://www.youtube.com/watch?v=e4EJ34xnlxk */
 
