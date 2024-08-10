@@ -244,9 +244,30 @@ Aşağdakileri notHesapla fonksiyonunda yap.
  dönün
 */
 
-function notHesapla(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function notHesapla(not) {
+  if (not >= 90 && not <= 100) {
+    return "Notun : " + "'" + not + "'" + " - 90-100 arasında 'A aldın.'";
+  } else if (not >= 80 && not <= 89) {
+    return "Notun : " + "'" + not + "'" + " - 80-89 arasında 'B aldın.'";
+  } else if (not >= 70 && not <= 79) {
+    return "Notun : " + "'" + not + "'" + " - 70-79 arasında 'C aldın.'";
+  } else if (not >= 60 && not <= 69) {
+    return "Notun : " + "'" + not + "'" + " - 60-69 arasında 'D aldın.'";
+  } else if (not < 69) {
+    return "Notun : " + "'" + not + "'" + " - F aldın.";
+  } else {
+    return "Notun : " + "'" + not + "'" + " - Geçersiz Not Girişi.";
+  }
 }
+
+/* Function çağırma, consola yazdırma ve test işlemleri*/
+console.log(notHesapla(100));
+console.log(notHesapla(85));
+console.log(notHesapla(75));
+console.log(notHesapla(65));
+console.log(notHesapla(55));
+console.log(notHesapla(195));
+
 
 /* Bonus Çalışma: Sesli harf sayacı - Kaç tane sesli harf var? */
 
