@@ -173,7 +173,10 @@ function milDonusturucu(kilometre) {
   return (kilometre + " km " + mil + " mil eder.");
 }
 
+/* Function çağırma*/
 console.log(milDonusturucu(1));
+
+
 
 //Görev 4b - Santimetreden Feet
 /*
@@ -196,6 +199,7 @@ function feetDonusturucu(santiMetre) {
   return `${santiMetre} cm = ${feet} ft ${inc.toFixed(5)} in`;
 }
 
+/* Function çağırma ve Belirli sayılarla test etme.*/
 console.log(feetDonusturucu(30.479));
 console.log(feetDonusturucu(30.48));
 console.log(feetDonusturucu(1));
@@ -214,9 +218,16 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yap:
 4. Bu döngüde, her seferinde cocukSarkisi fonsiyonu çalışsın ve console.log'a dönen metni yazdırsın.
 */
 
-function cocukSarkisi(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function cocukSarkisi(maymunSayisi) {
+  while (maymunSayisi > 0) {
+    console.log(`${maymunSayisi} küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!`);
+    maymunSayisi--;
+  }
 }
+
+/* Function çağırma*/
+cocukSarkisi(3);
+
 
 /* Görev 6 : Not Hesaplayıcı */
 
