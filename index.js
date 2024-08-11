@@ -20,6 +20,10 @@ Aşağıdakileri yap:
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
 
+console.log("/* 1-A. Soru Cevap Başlangıç */");
+/* 1-A. Soru Cevap Başlangıç */
+
+
 const surucuYasi = 20;
 if (surucuYasi >= 18) {
   console.log(true);
@@ -39,6 +43,10 @@ Aşağıdakileri yap:
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
 
+console.log("/* 1-B. Soru Cevap Başlangıç */");
+/* 1-B. Soru Cevap Başlangıç */
+
+
 let birinciDeger = "koç";
 let ikinciDegeri = "koç";
 if (birinciDeger === ikinciDegeri) {
@@ -57,6 +65,10 @@ Aşağıdakileri yap:
    İPUCU: Number metoduna bakabilirsin
 */
 
+console.log("/* 1-C. Soru Cevap Başlangıç */");
+/* 1-C. Soru Cevap Başlangıç */
+
+
 let deger = "1999";
 console.log(Number(deger));
 
@@ -68,6 +80,10 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamla:
    2. a ve b'yi çarpıp, sonucu dönsün
    3. console.log(carpma(7,4)) ile yazdığın fonsiyonu test edin. Console'da sonucu 28 olarak görmelisin.
 */
+
+console.log("/* 1-D. Soru Cevap Başlangıç */");
+/* 1-D. Soru Cevap Başlangıç */
+
 
 function carpma(sayi1, sayi2) {
   console.log(sayi1 * sayi2);
@@ -85,19 +101,21 @@ Aşağıdakileri yap:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
+
+console.log("/* 2. Soru Cevap Başlangıç */");
+/* 2. Soru Cevap Başlangıç */
+
+
 function kopeginYasi(kopekYas) {
   if (kopekYas <= 13) {
-    return (kopekYas * 7);
-    // console.log(kopekYas * 7);
+    return (`Köpeğin yaşı : ${kopekYas * 7}`);
   } else {
     return "Lütfen 13'e kadar bir rakam giriniz. Araştırmalara göre köpeklerin yaşı ortalama 10 - 13 yıldır.";
-    // console.log("Lütfen 13'e kadar bir rakam giriniz. Araştırmalara göre köpeklerin yaşı ortalama 10 - 13 yıldır.");
-
   }
 }
 
 /* Function çağırma*/
-kopeginYasi(14);
+console.log(kopeginYasi(14));
 
 /* Görev 3 */
 /*
@@ -112,6 +130,11 @@ Aşağıdakileri oyun isimli fonksiyonu kullanarak yap.
 
 OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı yener | veya beraberlik olur.
 */
+
+console.log("/* 3 - A. Soru Cevap Başlangıç */");
+/* 3 - A. Soru Cevap Başlangıç */
+
+
 
 function oyun(oyuncu, bilgisayar) {
   if (oyuncu === "Makas" && bilgisayar === "Kağıt" || oyuncu === "Kağıt" && bilgisayar === "Taş" || oyuncu === "Taş" && bilgisayar === "Makas") {
@@ -142,6 +165,9 @@ oyun("Taş", "Makas");
 Örn: console.log(oyun("Makas",bilgisayarinSecimi()))
 */
 
+console.log("/* 3 - B. Soru Cevap Başlangıç */");
+/* 3 - B. Soru Cevap Başlangıç */
+
 function bilgisayarinSecimi() {
   let bilgisayarSecim = Math.floor(Math.random() * 3);
 
@@ -168,6 +194,10 @@ Aşağdaki milDonusturucu fonksiyonunu aşağıdakileri kullanarak tamamla:
 3. Mil değerini geri dönün
 */
 
+console.log("/* 4 - A. Soru Cevap Başlangıç */");
+/* 4 - A. Soru Cevap Başlangıç */
+
+
 function milDonusturucu(kilometre) {
   let mil = (kilometre * 0.621371192);
   return (kilometre + " km " + mil + " mil eder.");
@@ -187,6 +217,9 @@ Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yap:
 
 Google'da arama ipucu: "feet cm dönüştürme"
 */
+
+console.log("/* 4 - B. Soru Cevap Başlangıç */");
+/* 4 - B. Soru Cevap Başlangıç */
 
 function feetDonusturucu(santiMetre) {
   // 1 ft = 30.48 cm
@@ -218,6 +251,11 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yap:
 4. Bu döngüde, her seferinde cocukSarkisi fonsiyonu çalışsın ve console.log'a dönen metni yazdırsın.
 */
 
+
+console.log("/* 5. Soru Cevap Başlangıç */");
+/* 5. Soru Cevap Başlangıç */
+
+
 function cocukSarkisi(maymunSayisi) {
   while (maymunSayisi > 0) {
     console.log(`${maymunSayisi} küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!`);
@@ -243,6 +281,9 @@ Aşağdakileri notHesapla fonksiyonunda yap.
  daha aşağıda 'F aldın'
  dönün
 */
+
+console.log("/* 6. Soru Cevap Başlangıç */");
+/* 6. Soru Cevap Başlangıç */
 
 function notHesapla(not) {
   if (not >= 90 && not <= 100) {
@@ -280,9 +321,28 @@ Aşağıdakileri sesliHarfSayaci fonskiyonunda yap.
 İPUCU - .includes() methoduna bakabilirsin. (https://www.w3schools.com/jsref/jsref_includes.asp)
 */
 
-function sesliHarfSayaci(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+console.log("/* 7. Soru Cevap Başlangıç */");
+/* 7. Soru Cevap Başlangıç */
+
+function sesliHarfSayaci(kelime) {
+  const sesliHarfler = ["a", "e", "ı", "i", "o", "ö", "u", "ü"];
+  const kucukKelime = kelime.toLowerCase();
+  let sayac = 0;
+
+  for (let i = 0; i < kucukKelime.length; i++) {
+    if (sesliHarfler.includes(kucukKelime[i])) {
+      sayac++;
+    }
+  }
+  return `Sesli harf sayısı: ${sayac}`;
 }
+
+/* Function çağırma, consola yazdırma ve test işlemleri*/
+console.log(sesliHarfSayaci("Merhaba, nasılsın?"));
+console.log(sesliHarfSayaci("İyiyim, sen nasılsın?"));
+
+console.log("/*- Soru Cevap Bitiş -*/");
+/*- Soru Cevap Bitiş -*/
 
 /* Lütfen bu satırın alt tarafını değiştirmeyin */
 function sa() {
